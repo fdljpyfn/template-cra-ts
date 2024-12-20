@@ -1,0 +1,72 @@
+0 verbose cli /Users/fndd/.nvm/versions/node/v22.12.0/bin/node /Users/fndd/.nvm/versions/node/v22.12.0/bin/npm
+1 info using npm@10.9.0
+2 info using node@v22.12.0
+3 silly config load:file:/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/fndd/WebstormProjectss/template-cra-ts/.npmrc
+5 silly config load:file:/Users/fndd/.npmrc
+6 silly config load:file:/Users/fndd/.nvm/versions/node/v22.12.0/etc/npmrc
+7 verbose title npm install @testing-library/jest-dom@^5.14.1 @testing-library/react@^13.0.0 @testing-library/user-event@^13.2.1 @types/jest@^27.0.1 @types/node@^16.7.13 @types/react@^18.0.0 @types/react-dom@^18.0.0 typescript@^4.4.2 web-vitals@^2.1.0
+8 verbose argv "install" "--no-audit" "--save" "@testing-library/jest-dom@^5.14.1" "@testing-library/react@^13.0.0" "@testing-library/user-event@^13.2.1" "@types/jest@^27.0.1" "@types/node@^16.7.13" "@types/react@^18.0.0" "@types/react-dom@^18.0.0" "typescript@^4.4.2" "web-vitals@^2.1.0"
+9 verbose logfile logs-max:10 dir:/Users/fndd/.npm/_logs/2024-12-20T06_55_39_618Z-
+10 verbose logfile /Users/fndd/.npm/_logs/2024-12-20T06_55_39_618Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest @testing-library/jest-dom@^5.14.1
+16 silly packumentCache full:https://registry.npmmirror.com/@testing-library%2fjest-dom cache-miss
+17 http fetch GET 200 https://registry.npmmirror.com/@testing-library%2fjest-dom 146ms (cache hit)
+18 silly packumentCache full:https://registry.npmmirror.com/@testing-library%2fjest-dom set size:381082 disposed:false
+19 silly fetch manifest @testing-library/react@^13.0.0
+20 silly packumentCache full:https://registry.npmmirror.com/@testing-library%2freact cache-miss
+21 http fetch GET 200 https://registry.npmmirror.com/@testing-library%2freact 3ms (cache hit)
+22 silly packumentCache full:https://registry.npmmirror.com/@testing-library%2freact set size:534788 disposed:false
+23 silly fetch manifest react@^19.0.0
+24 silly packumentCache full:https://registry.npmmirror.com/react cache-miss
+25 http fetch GET 200 https://registry.npmmirror.com/react 6ms (cache hit)
+26 silly packumentCache full:https://registry.npmmirror.com/react set size:4913552 disposed:false
+27 silly fetch manifest react@^18.0.0
+28 silly packumentCache full:https://registry.npmmirror.com/react cache-miss
+29 http fetch GET 200 https://registry.npmmirror.com/react 6ms (cache hit)
+30 silly packumentCache full:https://registry.npmmirror.com/react set size:4913552 disposed:false
+31 verbose stack Error: unable to resolve dependency tree
+31 verbose stack     at #failPeerConflict (/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1363:25)
+31 verbose stack     at #loadPeerSet (/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1329:33)
+31 verbose stack     at async #buildDepStep (/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:904:11)
+31 verbose stack     at async Arborist.buildIdealTree (/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:181:7)
+31 verbose stack     at async Promise.all (index 1)
+31 verbose stack     at async Arborist.reify (/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:131:5)
+31 verbose stack     at async Install.exec (/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/lib/commands/install.js:150:5)
+31 verbose stack     at async Npm.exec (/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/lib/npm.js:207:9)
+31 verbose stack     at async module.exports (/Users/fndd/.nvm/versions/node/v22.12.0/lib/node_modules/npm/lib/cli/entry.js:74:5)
+32 error code ERESOLVE
+33 error ERESOLVE unable to resolve dependency tree
+34 error
+35 error While resolving: template-cra-ts@0.1.0
+35 error Found: react@19.0.0[2m[22m
+35 error [2mnode_modules/react[22m
+35 error   react@"^19.0.0" from the root project
+35 error
+35 error Could not resolve dependency:
+35 error [95mpeer[39m react@"^18.0.0" from @testing-library/react@13.4.0[2m[22m
+35 error [2mnode_modules/@testing-library/react[22m
+35 error   @testing-library/react@"^13.0.0" from the root project
+35 error
+35 error Fix the upstream dependency conflict, or retry
+35 error this command with --force or --legacy-peer-deps
+35 error to accept an incorrect (and potentially broken) dependency resolution.
+36 error
+36 error
+36 error For a full report see:
+36 error /Users/fndd/.npm/_logs/2024-12-20T06_55_39_618Z-eresolve-report.txt
+37 silly unfinished npm timer reify 1734677739766
+38 silly unfinished npm timer reify:loadTrees 1734677739767
+39 silly unfinished npm timer idealTree:buildDeps 1734677740000
+40 silly unfinished npm timer idealTree:#root 1734677740000
+41 verbose cwd /Users/fndd/WebstormProjectss/template-cra-ts
+42 verbose os Darwin 22.6.0
+43 verbose node v22.12.0
+44 verbose npm  v10.9.0
+45 verbose exit 1
+46 verbose code 1
+47 error A complete log of this run can be found in: /Users/fndd/.npm/_logs/2024-12-20T06_55_39_618Z-debug-0.log
