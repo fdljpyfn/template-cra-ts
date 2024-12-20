@@ -48,6 +48,23 @@ Done
 
 [2024-12-20T06_55_39_618Z-debug-0.log](Z-README/2024-12-20T06_55_39_618Z-debug-0.log)
 
+下载失败的原因：react19
+
+删除`package.json`的`"cra-template-typescript": "1.2.0",`
+
+将`package.json`中`react`和`react-dom`版本改为18.3.1，18.3.1是react18的最后一个版本
+
+```shell
+npm install "@testing-library/jest-dom@^5.14.1" "@testing-library/react@^13.0.0" "@testing-library/user-event@^13.2.1" "@types/jest@^27.0.1" "@types/node@^16.7.13" "@types/react@^18.0.0" "@types/react-dom@^18.0.0" "typescript@^4.4.2" "web-vitals@^2.1.0"
+```
+ok
+
+
+方法二：
+下载这个项目(template-cra-ts)
+
+全局搜索：template-cra-ts，替换为项目名称
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
